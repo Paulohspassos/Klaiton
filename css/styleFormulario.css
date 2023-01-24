@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+        /*Configurações Gerais*/
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Comfortaa', cursive;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        html {
+            background-image: linear-gradient(to bottom, rgb(105, 105, 185), rgb(178, 178, 235));
+        }
+
+        body {
+            background-image: url(../imagens/sao_miguel_pq.png);
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            background-size: 50vh;
+        }
+        /*Configurações de cabeçalho*/
+
+        header {
+            text-align: center;
+            padding: 10px;
+            color: whitesmoke;
+            text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.555);
+        }
+
+        header > h1 {
+            padding-bottom: 20px;
+        }
+
+        /*Configurações de formulário*/  
+        main {
+            position: relative;
+            height: 72vh;
+            width: 100vw;
+        }
+
+        #cadastro {
+            text-shadow: 0px 0px 5px black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: rgba(4, 4, 51, 0.548);
+            width: 95vw;
+            height: 75vh;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.623);
+            transform: translate(-50%, -50%);
+        }
+
+        #entrar {
+            height: 250px;
+            display: block;
+            padding: 10px;
+            color: white;
+        }
+
+        #entrar > p {
+            margin: 10px;
+            font-size: .8em;
+        }
+
+        #questionario {
+            position: absolute;
+        }
+
+        .questionario > input {
+            display: inline;
+        }
+
+        .questionario > label p {
+            font-size: .8em;
+            display: inline;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        input[type=reset], input[type=submit] {
+            display: block;
+            margin-top: 5px;
+            font-size: 1em;
+            width: 100%;
+            height: 40px;
+            background-color: rgba(5, 5, 53, 0.685);
+            color: white;
+            border: none;
+            border-radius: 20px;
+        }
+
+        input[type=reset]:hover {
+            background-color: rgba(110, 110, 255, 0.692);
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: rgba(110, 110, 255, 0.692);
+            cursor: pointer;
+        }
+
+        .campo {
+            background-color: rgba(255, 255, 255, 0.562);
+            display: block;
+            width: 100%;
+            height: 40px;
+            border-radius: 20px;
+            margin: 5px 0px;
+        }
+
+        .campo > input:focus-within {
+            background-color: white;
+        }
+
+        .campo > label > span {
+            color: white;
+            font-size: 2em;
+            width: 40px;
+            padding: 5px;
+            display: block;
+        }
+
+        .campo > label > input {
+            background-color: transparent;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1em;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 20px;
+            padding: 4px;
+            transform: translateY(-42px);
+        }
+
+        .botao {
+            display: block;
+            text-align: center;
+            font-size: 1em;
+            width: 100%;
+            height: 40px;
+            background-color: rgba(5, 5, 53, 0.685);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            text-decoration: none;
+            margin-top: 5px;
+            padding-top: 9px;
+        }
+
+        .botao:hover {
+            background-color: rgb(110, 110, 255);
+            cursor: pointer;
+        }
+
+        .botao > span {
+            font-size: .8em;
+        }
+
+        footer {
+            background-color: rgb(35, 35, 61);
+            color: white;
+            font-size: .8em;
+            padding: 3px;
+            text-align: center;
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+        }
+
+        /*Configurações telas maiores*/
+        @media screen and (min-width: 768px) {
+            
+            #cadastro {
+                width: 800px;
+            }
+
+            #entrar {
+                float: left;
+                width: 100%;
+                height: 100%;
+            }
+        }

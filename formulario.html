@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquete etapa 2</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleFormulario.css">
+</head>
+<body>
+    <header>
+        <h1>Enquete do Exército de São Miguel Arcanjo</h1>
+        <p>ETAPA 002</p>
+    </header>
+        <main>
+            <section id="cadastro">
+                <div id="entrar">
+                    <h1>Cadastro</h1>
+                    <form action="cadastro.php" method="post" autocomplete="on">
+                        <div class="campo">
+                            <label for="inome"><input type="text" name="nome" id="inome" placeholder="Digíte se nome completo" autocomplete="name" required></label>
+                        </div>
+                        <div class="campo">
+                            <label for="iemail"><input type="email" name="login" id="iemail" placeholder="Digíte um e-mail válido" autocomplete="email" required></label>
+                        </div>
+                        <div class="campo">
+                            <label for="isenha1"><input type="password" name="senha" id="isenha1" placeholder="Digíte uma senha" autocomplete="current-password" required minlength="8"></label>
+                        </div>
+                        <div class="campo">
+                            <label for="isenha2"><input type="password" name="senha" id="isenha2" placeholder="Repita sua senha" autocomplete="current-password" required minlength="8"></label>
+                        </div>
+                        <a href="formulario02.html" class="botao">Próximo</a>
+                        <input type="reset" value="Limpar">
+                        <a href="index.html" class="botao">Página inicial</a>
+                            
+                    </form>
+                </div>
+            </section>
+        </main>
+    <footer>
+        <p>&copy;2023 | Site desenvolvido por <strong>Paulo Henrique dos Santos Passos</strong></p>
+    </footer>
+</body>
+</html>
